@@ -13,3 +13,4 @@ This infrastructure allows us to:
 - **Qdrant:** Persistent vector storage for our semantic shadow index.
 - **Archon:** Knowledge management and ingestion hub.
 - **BMAD:** Orchestration framework for autonomous research tasks.
+- **Local Model Registry:** Managed via `~/.pi/agent/models.json` for connectivity between orchestrators and local Ollama inference service.
