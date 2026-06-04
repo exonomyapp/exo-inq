@@ -5,6 +5,7 @@
 - **Documentation Maintenance:** Actively manage the curation of all files under `docs/` and ensure all documentation is kept up-to-date, including accurately reflecting the Git repository status and tracking current project progress.
 - **Commit Protocol:** Perform a Git commit at the close of every successful task. Await user confirmation of task completion before finalizing the commit.
 - **Imperative Mood:** Use the imperative mood (direct commands) for all documentation instructions to ensure clarity and avoid ambiguity.
+- **Verify-Before-Assume:** Never assume the technology stack, installation procedures, or configuration requirements of incoming technologies. Always interrogate the project structure, documentation, and source code to establish factual baseline before planning or execution.
 
 ## Prime Directive: Interaction Protocol
 - **Questions:** Any prompt containing a '?' is exclusively a question. Do NOT perform any repository mutations (edits, file creations, commands that alter system state) in response to such a prompt. Pause all ongoing work, address the question immediately, and await further explicit instructions for any action.
