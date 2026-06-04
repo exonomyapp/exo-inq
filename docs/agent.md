@@ -20,10 +20,11 @@ If session context is lost:
 - **Conciseness:** Prefer concise naming conventions for directories and files to maintain project clarity. For example, use `infra` instead of `infrastructure`.
 
 ## Operational Procedure
+- **Workspace:** Immediately upon session startup, switch to the project directory: `cd /home/exocrat/exo-inq/`. All operations must be executed within this directory unless explicitly required otherwise.
 - **Validation:** Before executing any complex or state-altering infrastructure commands, draft the procedure in a file within `docs/ops/`. Await confirmation that the command sequence is robust and permission-aware before executing it.
 - **Dependency Management:** Use an `external/` directory for all third-party downloads, repositories, and build artifacts. Ensure this directory is listed in `.gitignore` to prevent it from being tracked in the repository.
 - **Staging:** All git staging operations must use the command `git add .` to ensure no unstaged files are inadvertently left out of commits.
-- **Search:** Always update the repository-scoped search database *immediately* before every search: `updatedb -U /home/exocrat/exo-inq -o /home/exocrat/exo-inq/.repo.db`. Perform searches using: `locate -d /home/exocrat/exo-inq/.repo.db <pattern>`.
+- **Search:** Always update the repository-scoped search database *immediately* before every search: `updatedb --localpaths='/home/exocrat/exo-inq' --output='/home/exocrat/exo-inq/.repo.db'`. Perform searches using: `locate -d /home/exocrat/exo-inq/.repo.db <pattern>`.
 - **Memory Constraint:** Never simultaneously load more than three local SLMs. Monitor resource usage when running concurrent agent processes.
 
 ## Bootstrap Checklist (Resume State)
