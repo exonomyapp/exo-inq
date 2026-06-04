@@ -13,3 +13,10 @@ If session context is lost, I must:
 1. Run `gemini --list-sessions` to view past sessions.
 2. Use `gemini --resume <UUID>` or `/resume` to load relevant past context into the current session.
 3. Incorporate key information from recovered sessions into project documentation.
+
+## Bootstrap Checklist (Resume State)
+Upon session startup, identify project state by:
+1. Reading `docs/plans/rag_infrastructure.md` to understand the current architectural phase.
+2. Checking `git log` for the latest successful task.
+3. Listing the contents of `/infrastructure/` to verify deployed services.
+4. If missing context, follow "Session Context Recovery" above.
