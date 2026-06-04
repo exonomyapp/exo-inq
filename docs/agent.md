@@ -23,6 +23,7 @@ If session context is lost:
 - **Validation:** Before executing any complex or state-altering infrastructure commands, draft the procedure in a file within `docs/ops/`. Await confirmation that the command sequence is robust and permission-aware before executing it.
 - **Dependency Management:** Use an `external/` directory for all third-party downloads, repositories, and build artifacts. Ensure this directory is listed in `.gitignore` to prevent it from being tracked in the repository.
 - **Staging:** All git staging operations must use the command `git add .` to ensure no unstaged files are inadvertently left out of commits.
+- **Memory Constraint:** Never simultaneously load more than three local SLMs. Monitor resource usage when running concurrent agent processes.
 
 ## Bootstrap Checklist (Resume State)
 Upon session startup, identify project state by:
