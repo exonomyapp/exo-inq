@@ -7,9 +7,10 @@ Shift research approach from unreliable web scraping to a structured, local RAG 
 - **Qdrant:** Persistent vector storage for our semantic shadow index. (Active service in `/infra/`)
 - **Archon:** Knowledge management and ingestion hub. (Installed in `/external/`)
 - **BMAD:** Orchestration framework for autonomous research tasks. (Installed in `/external/`)
-- **Tiered SLM Intelligence:**
-  - **Primary Researcher Agent:** `gemma4:12b` (High reasoning capability)
-  - **Task Orchestrator/Subagent:** `gemma4:e4b` (Edge-optimized efficiency)
+## Tiered SLM Intelligence
+  - **Primary Researcher Agent:** `gemma4:12b` (4-bit quantized - Q4_K_M)
+  - **Task Orchestrator/Subagent:** `gemma4:e4b` (4-bit quantized - Q4_K_M)
+
 
 ## Roadmap
 | Phase | Task | Details | Status |
