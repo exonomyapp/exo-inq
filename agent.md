@@ -33,7 +33,7 @@ If session context is lost:
 
 ## Bootstrap Checklist (Resume State)
 Upon session startup, identify project state by:
-1. Reading `docs/plans/rag_infrastructure.md` to understand the current architectural phase.
-2. Checking `git log` for the latest successful task.
-3. Listing the contents of `/infra/` to verify deployed services.
+1. Reading the root `README.md` to understand project scope.
+2. Following instructions in `README.md` to read `docs/README.md` for operational and organizational context.
+3. Checking `git log` for the latest successful task.
 4. If missing context, follow "Session Context Recovery" above.
