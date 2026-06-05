@@ -1,7 +1,7 @@
 # Exo-Inq: Knowledge Management & Research Infrastructure
 
 ## Overview
-Exo-Inq is the foundational repository for our autonomous knowledge management and RAG-based research infrastructure. It orchestrates local LLM intelligence, persistent vector storage, and autonomous agents to maintain a "shadow index" of research data.
+Exo-Inq is the foundational repository for our autonomous knowledge management and RAG-based research infrastructure. It orchestrates local-first AI agents, persistent vector storage, and autonomous agents to maintain a "shadow index" of research data.
 
 ## Documentation
 - **[Agent Operational Agreement (`agent.md`)](agent.md):** The core principles, prime directive, and operational procedures for agent interaction. *Must be read first.*
