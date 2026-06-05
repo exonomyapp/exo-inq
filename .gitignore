@@ -7,6 +7,7 @@ node_modules/
 __pycache__/
 *.pyc
 .env
+!infra/.env
 .DS_Store
 *.log
 external/

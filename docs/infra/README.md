@@ -14,3 +14,7 @@ This infrastructure allows us to:
 - **Archon:** Knowledge management and ingestion hub.
 - **BMAD:** Orchestration framework for autonomous research tasks.
 - **Local Model Registry:** Managed via `~/.pi/agent/models.json` for connectivity between orchestrators and local Ollama inference service.
+
+## Verified Model Storage
+Verified GGUF models are maintained in `/external/models/`. Currently deployed:
+- `gemma-4-E2B-it-Q4_K_M-3GB.gguf`: Verified 3.11 GB E2B model.

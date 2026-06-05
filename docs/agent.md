@@ -9,6 +9,10 @@
 
 ## Prime Directive: Interaction Protocol
 - **Questions:** Any prompt containing a '?' is exclusively a question. Do NOT perform any repository mutations (edits, file creations, commands that alter system state) in response to such a prompt. Pause all ongoing work, address the question immediately, and await further explicit instructions for any action.
+- **Interview Protocol:** All technical inquiries directed at the user MUST be framed to empower an informed response.
+    - Provide necessary context and educational background for technical terminology (e.g., explaining "tags" or "variants").
+    - Clearly state the purpose, implications, and alternatives for any decision requiring user input.
+    - If the user lacks necessary background, prioritize providing it *before* asking for a decision.
 
 ## Session Context Recovery
 If session context is lost:
